@@ -1,9 +1,9 @@
 This repository acts as a knowledge base for the [SeQuenC project](sequenc.de) that aims to provide a technical methodology and a platform for uniform design and execution of quantum applications for different quantum service providers.
-As multiple pre- and post-processing steps in quantum programs are implemented on classical hardware, the emphasis is put on the workflow-based design and execution of quantum applications.
-This repository intends to provide a comprehensive overview of the supported scenarios and involved actors, the SeQuenC platform architecture and the tools it encompasses.
+This repository intends to provide a comprehensive overview of the supported use cases and involved actors, the SeQuenC platform architecture and the tools it encompasses.
 
 # Table of Contents
-* [SeQuenC Actors and Scenarios](#sequenc-actors-and-scenarios)
+* [SeQuenC Platform Overview](#sequenc-platform-overview)
+  * [SeQuenC Actors](#sequenc-actors-and-use-cases)
 * [SeQuenC Platform Architecture](#sequenc-platform-architecture)
 * [SeQuenC Tools](#sequenc-tools)
   * [Modeling and Execution of Quantum Workflows](#modeling-and-execution-of-quantum-workflows)
@@ -11,7 +11,11 @@ This repository intends to provide a comprehensive overview of the supported sce
   * [Quantum Service Store](#quantum-service-store)  
   * [Deployment Automation](#deployment-automation)  
 
-# SeQuenC Actors and Scenarios
+# SeQuenC Platform Overview
+
+The SeQuenC platform and associated tools/services are intended to facilitate the exploitation and integration of quantum software in the cloud. One of the core goals of the platform is to enable unified access to available quantum hardware offered as heterogeneous cloud services by general-purpose cloud providers such as IBM or AWS, and specialized infrastructure providers such as IonQ and QMware. As multiple pre- and post-processing steps in quantum applications must be implemented on classical hardware, the platform emphasizes the role of workflows and provides mechanisms for workflow-based design and execution of quantum applications. The platform and its associated tools are developed as open source software and made available to interested parties for their own use or further development.
+
+## SeQuenC Actors
 
 The SeQuenC actors are as follows:
 
@@ -19,8 +23,24 @@ The SeQuenC actors are as follows:
 * Workflow Modeler: responsible for modeling the workflow-based integration of classical and quantum parts that can be automatically enacted using a compatible workflow engine.
 * Operations Engineer (Ops): responsible for delivery on the infrastructure and infrastructure testing.
 
+## Platform Use Cases
 
-Scenarios TBD
+The platform realizes multiple use cases surrounding the topic of workflow-based quantum software development. The UML Use Case diagram below shows some major use cases supported by the platform:
+
+* UC1 [Manage Quantum Artifacts]. SeQuenC actors such as Quantum Software Developer or Workflow Modeler manage the repository of available quantum artifacts (store, browse, updated, etc.), which include available quantum circuit implementations, e.g., in OpenQASM format, and quantum programs, e.g., implemented in Python. Additionally, the repository also includes workflow models that integrate such quantum artifacts with other classical parts required in the application, e.g., classical Python code for post-processing the circuit execution results.
+
+* UC2 [Model Quantum Workflows]. SeQuenC actors (see Workflow Modeler) can graphically create workflow models that represent desired orchestrations of classical and quantum parts that constitute a to-be-executed quantum application. Produced workflow models can be stored for future reuse as described in UC1. Furthermore, produced workflow models can be automatically enacted using a compliant workflow engine available as a part of the SeQuenC platform.
+
+* UC3 [Model Application Deployments]. TBD
+
+* UC4 [Execute Application Deployments]. TBD.
+
+* UC5 [Execute Quantum Workflows]. TBD.
+
+![#sequenc-overview](figures/SeQuenC_UseCase.png)
+
+
+
 
 # SeQuenC Platform Architecture
 
