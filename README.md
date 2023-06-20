@@ -3,7 +3,8 @@ This repository intends to provide a comprehensive overview of the supported use
 
 # Table of Contents
 * [SeQuenC Platform Overview](#sequenc-platform-overview)
-  * [SeQuenC Actors](#sequenc-actors-and-use-cases)
+  * [SeQuenC Actors](#sequenc-actors)
+  * [Platform Use Cases](#platform-use-cases)
 * [SeQuenC Platform Architecture](#sequenc-platform-architecture)
 * [SeQuenC Tools](#sequenc-tools)
   * [Modeling and Execution of Quantum Workflows](#modeling-and-execution-of-quantum-workflows)
