@@ -30,17 +30,15 @@ The platform realizes multiple use cases surrounding the topic of workflow-based
 
 * UC1 [Manage Quantum Artifacts]. SeQuenC actors such as Quantum Software Developer or Workflow Modeler manage the repository of available quantum artifacts (store, browse, updated, etc.), which include available quantum circuit implementations, e.g., in OpenQASM format, and quantum programs, e.g., implemented in Python. Additionally, the repository also includes workflow models that integrate such quantum artifacts with other classical parts required in the application, e.g., classical Python code for post-processing the circuit execution results.
 
-* UC2 [Model Quantum Workflows]. SeQuenC actors (see Workflow Modeler) can graphically create workflow models that represent desired orchestrations of classical and quantum parts that constitute a to-be-executed quantum application. Produced workflow models can be stored for future reuse as described in UC1. Furthermore, produced workflow models can be automatically enacted using a compliant workflow engine available as a part of the SeQuenC platform.
+* UC2 [Model Quantum Workflows]. SeQuenC actors (see Workflow Modeler) can graphically create workflow models that represent desired orchestrations of classical and quantum parts that constitute a to-be-executed quantum application. Produced workflow models can be stored for future reuse as described in UC1. 
 
-* UC3 [Model Application Deployments]. TBD
+* UC3 [Model Application Deployments]. To enable the automated orchestration of heterogeneous classical and quantum parts that constitute quantum applications, they need to be deployed according to existing infrastructure requirements. To avoid the inefficient and error-prone manual deployments, SeQuenC provides mechanisms for modeling and automated deployment of quantum applications. Hence, SeQuenC actors (see Operations Engineer) can represent the desired deployment using the deployment modeling tool. 
 
-* UC4 [Execute Application Deployments]. TBD.
+* UC4 [Execute Application Deployments]. The produced deployment models can be automatically executed by the compatible deployment automation engine available as a part of the SeQuenC platform. After successfully deploying the classical and quantum parts that constitute the target quantum application, the corresponding quantum workflow can be executed.
 
-* UC5 [Execute Quantum Workflows]. TBD.
+* UC5 [Execute Quantum Workflows]. The produced workflow models can be automatically enacted using a compatible workflow engine available as a part of the SeQuenC platform. 
 
 ![#sequenc-overview](figures/SeQuenC_UseCase.png)
-
-
 
 
 # SeQuenC Platform Architecture
