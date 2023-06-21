@@ -43,11 +43,65 @@ The platform realizes multiple use cases surrounding the topic of workflow-based
 
 # SeQuenC Platform Architecture
 
-The SeQuenC project aims to provide a platform covering both the design and runtime phases for unified execution of quantum applications on heterogeneous quantum cloud services.
+The SeQuenC project aims to provide a platform covering both the design and runtime phases for unified execution of quantum applications on heterogeneous quantum cloud services. To achieve this, the platform enables multiple functionalities, such as modeling of workflows and application deployments, automated execution of produced models using the corresponding workflow and deployment orchestration engines, etc.
+The figure below shows a layer view of the SeQuenC platform comprising groupings of implementation units. In the following, the elements of this view are discussed in more detail.
 
-![#sequenc-architecture](SeQuenC-Architecture.png)
+![#sequenc-architecture](figures/SeQuenC_LayerView.png)
 
-The Architecture Diagram depicts the connections among the SeQuenC components. 
+## View Element Catalog
+In the depicted layered architecture view, some layers are divided into segments to provide a finer-grained representation of modules constituting the layer. Layers and their segments are described below.
+
+### UI Layer
+This layer groups the functionalities that enable SeQuenC actors to interact with the platform. This includes various graphical user interfaces, such as workflow and deployment modeling tools, as well as management interfaces, e.g., for managing internal and external APIs.
+
+
+**Quantum Workflows Modeling Tool.**
+TBD
+
+**Workflow Engine Management.**
+TBD
+
+**Quantum Service Store Management.**
+TBD
+
+**Deployment Modeling Tool.**
+TBD
+
+**Deployment Engine Management.**
+TBD
+
+**API Management.**
+TBD
+
+**Client Applications.**
+TBD
+
+### Business Logic Layer
+
+**Workflow Modeling Backend.**
+TBD
+
+**Workflow Engine.**
+TBD
+
+**Quantum Service Store Backend.**
+TBD
+
+**Quantum Provenance Backend.**
+TBD
+
+**Deployment Modeling Backend.**
+TBD
+
+**Deployment Engine.**
+TBD
+
+**Middleware for Unified Execution of Quantum Applications.**
+(i.e., SeQuenC's "Unification Layer") TBD
+
+### Data Access Layer
+
+TBD
 
 
 # SeQuenC Tools
