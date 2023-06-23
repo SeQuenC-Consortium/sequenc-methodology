@@ -63,10 +63,13 @@ This module represents a graphical modeling tool that is responsible for graphic
 * Trigger the enactment for created models on a compatible workflow engine (Camunda workflow engine)
 
 **Workflow Engine Management.**
-TBD
+This module represents a management tool that provides a GUI for interacting with the workflow engine, which includes the following functionalities:
+* Managing the state of workflow instances, e.g., pause or terminate
+* Monitor the execution
 
 **Quantum Service Store Management.**
-TBD
+This module represents a management tool that provides a GUI for interacting with the service store and includes the following functionalities:
+* CRUD operations for managing quantum artifacts such as circuits or workflow models
 
 **Deployment Modeling Tool.**
 TBD
