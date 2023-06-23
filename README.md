@@ -56,7 +56,11 @@ This layer groups the functionalities that enable SeQuenC actors to interact wit
 
 
 **Quantum Workflows Modeling Tool.**
-TBD
+This module represents a graphical modeling tool that is responsible for graphical specification of quantum workflows and provides the following functionalities:
+* Specification of the desired orchestration of classical and quantum parts that constitute a quantum application
+* Transformation of the created quantum workflow into a standard-compliant workflow format (BPMN 2.0)
+* Persisting and opening created models
+* Trigger the enactment for created models on a compatible workflow engine (Camunda workflow engine)
 
 **Workflow Engine Management.**
 TBD
