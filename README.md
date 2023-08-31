@@ -40,6 +40,16 @@ The platform realizes multiple use cases surrounding the topic of workflow-based
 
 ![#sequenc-overview](figures/SeQuenC_UseCase.png)
 
+### SeQuenC Use-Cases
+
+| Items | Contents |
+| --- | --- |
+| **Short Description** |  This repository collects the use-cases for the SeQuenC prject. The use-cases are documented in the respective directory and reflect different scenarios and tools. |
+| **Documentation** | Inside the repository |
+| **Repository** | <https://github.com/SeQuenC-Consortium/SeQuenC-UseCases> |
+| **Licence**| Licensed under the Apache License 2.0. |
+
+
 
 # SeQuenC Platform Architecture
 
