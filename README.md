@@ -49,70 +49,70 @@ The figure below shows a layer view of the SeQuenC platform comprising groupings
 ![#sequenc-architecture](figures/SeQuenC_LayerView.png)
 
 ## View Element Catalog
-In the depicted layered architecture view, some layers are divided into segments to provide a finer-grained representation of modules constituting the layer. Layers and their segments are described below.
+In the depicted layered architecture view, some layers are divided into segments to provide a finer-grained representation of elements constituting the layer. Layers and their segments are described below.
 
 ### UI Layer
-This layer groups the functionalities that enable SeQuenC actors to interact with the platform. This includes various graphical user interfaces, such as workflow and deployment modeling tools, as well as management interfaces, e.g., for managing internal and external APIs.
+This layer groups the elements that enable SeQuenC actors to interact with the platform. This includes various graphical user interfaces, such as workflow and deployment modeling tools, as well as management interfaces, e.g., for managing internal and external APIs.
 
 
 **Quantum Workflows Modeling Tool.**
-This module represents a graphical modeling tool that is responsible for graphical specification of quantum workflows and provides the following functionalities:
+This element represents a graphical modeling tool that is responsible for graphical specification of quantum workflows and provides the following functionalities:
 * Specification of the desired orchestration of classical and quantum parts that constitute a quantum application
 * Transformation of the created quantum workflow into a standard-compliant workflow format (BPMN 2.0)
 * Persisting and opening created models
 * Trigger the enactment for created models on a compatible workflow engine (Camunda workflow engine)
 
 **Workflow Engine Management.**
-This module represents a management tool that provides a GUI for interacting with the workflow engine, which includes the following functionalities:
+This element represents a management tool that provides a GUI for interacting with the workflow engine, which includes the following functionalities:
 * Managing the state of workflow instances, e.g., pause or terminate
 * Monitor the execution
 
 **Quantum Service Store Management.**
-This module represents a management tool that provides a GUI for interacting with the service store and includes the following functionalities:
+This element represents a management tool that provides a GUI for interacting with the service store and includes the following functionalities:
 * CRUD operations for managing quantum artifacts such as circuits or workflow models
 
 **Deployment Modeling Tool.**
-TBD
+This element represents a tool that provides a GUI for creating deployment models for quantum applications using the TOSCA CML. Deployment modeling tool provides the following functionalities:
+* Creation and management of deployment modeling constructs, e.g., representing specific cloud persistence or infrastructure services
+* Creation and management of deployment topologies that represent hybrid, quantum-classical applications and the related components
 
 **Deployment Engine Management.**
-TBD
+This element represents a tool that provides a GUI for managing the deployments enacted using the deployment engine. This includes such features as execution of multiple instances of a deployment model, monitoring their status, and cancelling running deployments.
 
 **API Management.**
-TBD
-
-**Client Applications.**
-TBD
+To facilitate design, publishing, and management of public and private APIs exposed by platform components, an API Management solution such as WSO2 API Manager can be utilized.
+An API Management GUI tool serves as an entry point for interacting with API management functionalities of the platform.
 
 ### Business Logic Layer
+This layer groups the elements implementing business functionalities.
 
 **Workflow Modeling Backend.**
-TBD
+This element realizes the business logic for modeling and management of quantum workflows.
 
 **Workflow Engine.**
-TBD
+The Workflow Engine is responsible for coordinating the execution of modeled quantum workflows and keeping track of the status of the workflow instances throughout its lifecycle.
 
 **Quantum Service Store Backend.**
-TBD
+This element realizes the business logic for managing quantum artifacts.
 
 **Quantum Provenance Backend.**
-TBD
+This element realizes the business logic for collecting and analyzing important provenance attributes about quantum computations. This helps to support different use cases, such as selecting suitable quantum hardware for the execution of a quantum circuit, providing a basis for transpilers and optimizers, or finding the origins of errors in quantum computations.
 
 **Deployment Modeling Backend.**
-TBD
+This element realizes the business logic for modeling and managing of deployment models.
 
 **Deployment Engine.**
-TBD
+The Deployment Engine is responsible for coordinating the execution of created deployment models and providing the status of the deployment model instances throughout their lifecycle.
 
 **Middleware for Unified Execution of Quantum Applications.**
-(i.e., SeQuenC's "Unification Layer") TBD
+This elements implements the business logic for unified execution of quantum applications. This includes creating and managing jobs that can be executed on different quantum service providers such as IBM or AWS.
 
 ### Data Access Layer
 
-TBD
+This layer groups the elements that are used for persistence of the data artifacts, such as workflow and deployment models, quantum artifacts, etc.
 
 
 # SeQuenC Tools
-
 
 ## Modeling and Execution of Quantum Workflows
 Quantum applications are inherently hybrid as they comprise both classical and quantum-specific parts.
