@@ -115,7 +115,7 @@ This element realizes the business logic for modeling and managing of deployment
 The Deployment Engine is responsible for coordinating the execution of created deployment models and providing the status of the deployment model instances throughout their lifecycle.
 
 **Middleware for Unified Execution of Quantum Applications.**
-(i.e., SeQuenC's "Unification Layer"). This module represents a middleware with an OpenAPI specification to access various quantum services.
+This element represents a middleware that provides unified access to various quantum services.
 
 * Provides a REST-API for unified calls, such that it facilitates the usage of quantum services.
 * Achieves Platform Autonomy by providing a translation to target formats which is suitable for the chosen quantum service. 
