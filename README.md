@@ -40,6 +40,16 @@ The platform realizes multiple use cases surrounding the topic of workflow-based
 
 ![#sequenc-overview](figures/SeQuenC_UseCase.png)
 
+## SeQuenC Use-Cases
+
+| Items | Contents |
+| --- | --- |
+| **Short Description** |  This repository collects the use-cases for the SeQuenC project. The use-cases are documented in the respective directory and reflect different scenarios and tools. |
+| **Documentation** | Inside the repository for the specific use-case. |
+| **Repository** | <https://github.com/SeQuenC-Consortium/SeQuenC-UseCases> |
+| **Licence**| Licensed under the Apache License 2.0. |
+
+
 
 # SeQuenC Platform Architecture
 
@@ -105,7 +115,10 @@ This element realizes the business logic for modeling and managing of deployment
 The Deployment Engine is responsible for coordinating the execution of created deployment models and providing the status of the deployment model instances throughout their lifecycle.
 
 **Middleware for Unified Execution of Quantum Applications.**
-This elements implements the business logic for unified execution of quantum applications. This includes creating and managing jobs that can be executed on different quantum service providers such as IBM or AWS.
+(i.e., SeQuenC's "Unification Layer"). This module represents a middleware with an OpenAPI specification to access various quantum services.
+
+* Provides a REST-API for unified calls, such that it facilitates the usage of quantum services.
+* Achieves Platform Autonomy by providing a translation to target formats which is suitable for the chosen quantum service. 
 
 ### Data Access Layer
 
