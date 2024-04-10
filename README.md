@@ -10,7 +10,8 @@ This repository intends to provide a comprehensive overview of the supported use
   * [Modeling and Execution of Quantum Workflows](#modeling-and-execution-of-quantum-workflows)
   * [Unification Layer](#unification-layer)
   * [Quantum Service Store](#quantum-service-store)  
-  * [Deployment Automation](#deployment-automation)  
+  * [Deployment Automation](#deployment-automation)
+  * [QASM Test-suite](#qasm-test-suite)
 
 # SeQuenC Platform Overview
 
@@ -203,4 +204,15 @@ The produced models can be enacted by TOSCA-compliant orchestrators such as Open
 | **Short Description** | The Deployment Orchestrator in SeQuenC is based on the OpenTOSCA Container, a TOSCA deployment automation engine that enables automatic provisioning of cloud applications by analyzing the TOSCA model and invoking the Build Plan to instantiate a new application instance. If there is no Build Plan available, the container generates a Build Plan on its own. To enable the management of a certain application instance during its lifetime, the OpenTOSCA Container is able to execute arbitrary Management Plans, which can be modeled manually or generated for provisioning. |
 | **Documentation** | [Documentation](https://opentosca.github.io/container/) |
 | **Repository** | <https://github.com/OpenTOSCA/container/> |
+| **Licence**| Licensed under the Apache License 2.0. |
+
+## QASM Test Suite
+
+To facilitate and automate the testing of the SeQuenC-platform, the test-suite can be used.
+
+| Items | Contents |
+| --- | --- |
+| **Short Description** | The QASM test-suite is a framework which can be used to test for conventions and formats in the SeQuenC-platform. It also provides a circuit generator and a circuit simulator for reference.|
+| **Documentation** | [Documentation](https://github.com/SeQuenC-Consortium/qasm-testsuite/) |
+| **Repository** | <https://github.com/SeQuenC-Consortium/qasm-testsuite/> |
 | **Licence**| Licensed under the Apache License 2.0. |
