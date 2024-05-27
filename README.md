@@ -216,3 +216,14 @@ To facilitate and automate the testing of the SeQuenC-platform, the test-suite c
 | **Documentation** | [Documentation](https://github.com/SeQuenC-Consortium/qasm-testsuite/) |
 | **Repository** | <https://github.com/SeQuenC-Consortium/qasm-testsuite/> |
 | **Licence**| Licensed under the Apache License 2.0. |
+
+## BloqCat
+
+A modeling framework for the usage of concrete implementatios of patterns.
+
+| Items | Contents |
+| --- | --- |
+| **Short Description** | The BloqCat Framework is a graphical extension to use concrete solutions of a pattern with other concrete solutions by aggregating them into a complete solution. It can be used with the Eclipse Winery and pre-defined Nodetypes which are derived from the patterns of the Pattern Atlas.|
+| **Documentation** | [Documentation](https://github.com/SeQuenC-Consortium/bloqCat/) |
+| **Repository** | [https://github.com/SeQuenC-Consortium/bloqCat](https://github.com/SeQuenC-Consortium/bloqCat/) |
+| **Licence**| Licensed under the Apache License 2.0. |
