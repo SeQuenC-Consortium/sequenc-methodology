@@ -12,6 +12,7 @@ This repository intends to provide a comprehensive overview of the supported use
   * [Quantum Service Store](#quantum-service-store)  
   * [Deployment Automation](#deployment-automation)
   * [QASM Test-suite](#qasm-test-suite)
+* [Quantum Cloud Offering Comparison](./cloud-offering-survey/)
 
 # SeQuenC Platform Overview
 
