@@ -1,0 +1,34 @@
+Offering;Included;Excluded;External Token;Only Simulator;No Public Accesss;Early Access;Missing/Unsufficient Documentation;Annealing;Comments
+Agnostiq Covalent;;x;yes;;;;;;
+Alice & Bob;x;;;;;;;;uses google cloud - TODO: final check if included
+AQT Cloud Arnica;;x;;;contact;;;;
+Atos/Eviden Qaptiva;;x;;yes;;;;;
+AWS Braket;x;;;;;;;;
+Azure Quantum;x;;;;;;;;
+Classiq;;x;yes;;;;;;
+D-Wave Leap;;x;;;;;;yes;
+Google Quantum AI;;x;;;application;;;;
+Honeywell;;x;;;contact;;;;
+Horizon Quantum Triple Alpha;;x;;;;yes;;;
+IBMQ;x;;;;;;;;
+IonQ Quantum Cloud;x;;;;;;;;
+IQM Resonance;;x;;;contact;;;;
+Kipu Quantum PlanQK Platform;;x;;;;yes;;;
+NVIDIA Quantum Cloud;;x;;;;yes;;;
+OQC Cloud;;x;;;application;;;;
+OriginQ Cloud;;x;;;;;yes;;
+PASQAL Cloud Services;;x;;yes;;;;;
+qBraid Quantum Platform;x;;;;;;;;
+Q-CTRL Boulder Opal;;x;;yes;;;;;
+QMware Cloud;;x;;;contact;;;;
+Quandela Cloud;x;;;;;;;;
+Quantum Inspire;x;;;;;;;;
+QuEra Premium Cloud Access;;x;;;contact;;;;
+QuiX Bia Quantum Cloud Computing Service;;x;;;contact;;;;
+Rigetti Quantum Cloud Services;;x;;;contact;;;;
+Spinq Quantum Computing Cloud Platform;;x;;;;;yes;;
+Strangeworks Platform;;x;;;Account creation does not work at the moment;;;;
+Xanadu Cloud;;x;;;contact;;;;
+Zapata Orquestra;;x;;;;yes;;;
+ ;;;;;;;;;
+ ;;;;;;;;;
