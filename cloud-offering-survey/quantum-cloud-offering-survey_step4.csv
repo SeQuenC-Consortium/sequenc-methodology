@@ -1,6 +1,6 @@
 Offering;Included;Excluded;External Token;Only Simulator;No Public Accesss;Early Access;Missing/Unsufficient Documentation;Annealing;Comments
 Agnostiq Covalent;;x;yes;;;;;;
-Alice & Bob;x;;;;;;;;uses google cloud - TODO: final check if included
+Alice & Bob;x;;;;;;;;
 AQT Cloud Arnica;;x;;;contact;;;;
 Atos/Eviden Qaptiva;;x;;yes;;;;;
 AWS Braket;x;;;;;;;;
